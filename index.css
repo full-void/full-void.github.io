@@ -1,0 +1,123 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.b {
+  font-weight: bold;
+}
+
+main {
+  margin: 0;
+}
+
+section {
+  width: 100%;
+  background: linear-gradient(to right, #0575E6, #021B79);
+}
+
+section:nth-of-type(2n) {
+  background: linear-gradient(to right, #248ffa, #0326ab);
+}
+
+canvas {
+  display: block;
+  vertical-align: bottom;
+}
+
+.profile-pic {
+  width: 251px;
+  height: 251px;
+  margin-right: 15px;
+}
+
+.bio {
+  min-width: 251px;
+}
+
+.card {
+  padding: 15px;
+}
+.card .prog-icon {
+  height: 207px;
+}
+.card .prog-icon svg, .card .prog-icon img {
+  height: 207px;
+  max-width: 239px;
+}
+
+.ccenter {
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+}
+
+.right-divider {
+  border-right: 1px solid #fff;
+}
+
+.left-divider {
+  border-left: 1px solid #fff;
+}
+
+.row .card.col {
+  padding: 0px;
+}
+
+.justify-evenly {
+  justify-content: space-evenly;
+}
+
+.hobbies .card {
+  max-width: 413px;
+}
+.hobbies .card img {
+  height: 337px;
+}
+
+.button-icon {
+  max-width: 22.1px;
+  float: left;
+  line-height: inherit;
+  margin-right: 15px;
+  margin-top: 16px;
+}
+
+.zero-opacity {
+  opacity: 0;
+}
+
+.full-opacity {
+  opacity: 1;
+}
+
+.transition-mid {
+  -webkit-transition: opacity 913ms ease;
+  -moz-transition: opacity 913ms ease;
+  -ms-transition: opacity 913ms ease;
+  -o-transition: opacity 913ms ease;
+  transition: opacity 913ms ease;
+}
+
+.transition-small {
+  -webkit-transition: opacity 513ms ease;
+  -moz-transition: opacity 513ms ease;
+  -ms-transition: opacity 513ms ease;
+  -o-transition: opacity 513ms ease;
+  transition: opacity 513ms ease;
+}
+
+.transition-delay {
+  -webkit-transition-delay: 897ms;
+  -moz-transition-delay: 897ms;
+  -ms-transition-delay: 897ms;
+  -o-transition-delay: 897ms;
+  transition-delay: 897ms;
+}
+
+/*# sourceMappingURL=index.css.map */
