@@ -33,4 +33,5 @@ $(document).ready(function() {
     $(window).scroll(scrollFadeIn);
 
     $(window).on('resize', optimal_em);
+    $(window).on('resize', scrollFadeIn);
 });
