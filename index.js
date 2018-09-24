@@ -8,16 +8,16 @@ function optimal_em() {
     if (fsz > 21) {
         fsz = 21
     }
-    $("body").css("font-size", fsz);
+    $("html").css("font-size", fsz);
     console.log("The value", $("body").css("font-size"))
 }
 
 function scrollFadeIn (){
     $('.zero-opacity').each( function(i){
-        var top_of_object = $(this).offset().top;
-        var top_of_window = $(window).scrollTop();
-        var bottom_of_object = top_of_object + $(this).outerHeight();
-        var bottom_of_window = top_of_window + $(window).height();
+        let top_of_object = $(this).offset().top;
+        let top_of_window = $(window).scrollTop();
+        let bottom_of_object = top_of_object + $(this).outerHeight();
+        let bottom_of_window = top_of_window + $(window).height();
         if( bottom_of_window > top_of_object && top_of_window < bottom_of_object ){
             $(this).addClass('full-opacity');
         }
