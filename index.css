@@ -129,4 +129,10 @@ canvas {
   transition-delay: 897ms;
 }
 
+.fullscreen {
+  overflow: auto;
+  min-width: 100%;
+  min-height: 100%;
+}
+
 /*# sourceMappingURL=index.css.map */

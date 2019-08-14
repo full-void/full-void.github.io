@@ -135,3 +135,9 @@ canvas {
   -o-transition-delay: 897ms;
   transition-delay: 897ms;
 }
+
+.fullscreen {
+  overflow: auto;
+  min-width: 100%;
+  min-height: 100%;
+}
