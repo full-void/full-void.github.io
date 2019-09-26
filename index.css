@@ -14,13 +14,29 @@ main {
   margin: 0;
 }
 
-section {
-  width: 100%;
-  background: linear-gradient(to right, #0575E6, #021B79);
+.bg-gradient-blue {
+  background: #1596e4;
+  background: linear-gradient(90deg, #1596e4 0%, #00acff 31%, #007dff 100%);
 }
 
-section:nth-of-type(2n) {
-  background: linear-gradient(to right, #248ffa, #0326ab);
+.bg-gradient-orange {
+  background: #970ed5;
+  background: linear-gradient(90deg, #ed6e25 0%, #ff6f00 43%, #ffaf00 100%);
+}
+
+.bg-gradient-purple {
+  background: #8625ed;
+  background: linear-gradient(90deg, #8625ed 0%, #970ed5 59%, #b800ff 100%);
+}
+
+.bg-gradient-green {
+  background: #15e434;
+  background: linear-gradient(90deg, #15e434 0%, #00ff1d 44%, #00ff4c 100%);
+}
+
+.bg-gradient-red {
+  background: #ff1500;
+  background: linear-gradient(90deg, #e43a15 0%, #ff004a 31%, #ff1500 100%);
 }
 
 canvas {

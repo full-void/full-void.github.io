@@ -1,7 +1,10 @@
 $small-screen-size: 729px;
 $mid-screen-size: 1135px;
-$background-gradient: linear-gradient(to right, #0575E6, #021B79);
-$background-gradient-light: linear-gradient(to right, lighten(#0575E6, 10), lighten(#021B79, 10));
+$background-gradient-blue: linear-gradient(90deg, rgba(21,150,228,1) 0%, rgba(0,172,255,1) 31%, rgba(0,125,255,1) 100%);
+$background-gradient-orange: linear-gradient(90deg, rgba(237,110,37,1) 0%, rgba(255,111,0,1) 43%, rgba(255,175,0,1) 100%);
+$background-gradient-purple: linear-gradient(90deg, rgba(134,37,237,1) 0%, rgba(151,14,213,1) 59%, rgba(184,0,255,1) 100%);
+$background-gradient-green: linear-gradient(90deg, rgba(21,228,52,1) 0%, rgba(0,255,29,1) 44%, rgba(0,255,76,1) 100%);
+$background-gradient-red: linear-gradient(90deg, rgba(228,58,21,1) 0%, rgba(255,0,74,1) 31%, rgba(255,21,0,1) 100%);
 
 html, body {
   width: 100%;
@@ -17,13 +20,30 @@ html, body {
 main {
   margin: 0;
 }
-section {
-  width: 100%;
-  background: $background-gradient;
+
+.bg-gradient-blue {
+  background: rgb(21, 150, 228);
+  background: $background-gradient-blue;
 }
 
-section:nth-of-type(2n) {
-  background: $background-gradient-light;
+.bg-gradient-orange {
+  background: rgba(151,14,213,1);
+  background: $background-gradient-orange;
+}
+
+.bg-gradient-purple {
+  background: rgba(134,37,237,1);
+  background: $background-gradient-purple;
+}
+
+.bg-gradient-green {
+  background: rgb(21,228,52);
+  background: $background-gradient-green;
+}
+
+.bg-gradient-red {
+  background: rgba(255,21,0,1);
+  background: $background-gradient-red;
 }
 
 canvas {
