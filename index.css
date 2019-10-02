@@ -58,11 +58,8 @@ canvas {
   padding: 15px;
 }
 .card .prog-icon {
-  height: 207px;
-}
-.card .prog-icon svg, .card .prog-icon img {
-  height: 207px;
-  max-width: 239px;
+  height: 6em;
+  width: 6em;
 }
 
 .ccenter {
