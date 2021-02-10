@@ -1,3 +1,5 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/tachyons/4.11.1/tachyons.min.css");
+
 $small-screen-size: 729px;
 $mid-screen-size: 1135px;
 $background-gradient-blue: linear-gradient(90deg, rgba(21,150,228,1) 0%, rgba(0,172,255,1) 31%, rgba(0,125,255,1) 100%);
@@ -66,6 +68,10 @@ canvas {
   .prog-icon {
     height: 6em;
     width: 6em;
+    img {
+      height: inherit;
+      width: inherit;
+    }
   }
 }
 
