@@ -8,8 +8,8 @@
   <title>Abhinav Garg</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" href="index.css"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tachyons/4.11.1/tachyons.min.css">
+  <link rel="stylesheet" href="index.css"/>
 </head>
 <body>
 <section class="pb6 pt6 bg-gradient-blue">
@@ -247,7 +247,7 @@
         </div>
         <div class="ma3 card zero-opacity transition-mid hoverable">
           <div class="center prog-icon card-image">
-            <img src="images/icons/java.svg">
+            <img class="java-icon" src="images/icons/java.svg">
           </div>
           <div class="black-text card-content">
             Java
@@ -348,7 +348,34 @@
 
       <div class="card zero-opacity transition-mid black-text hoverable ma2 pa1">
         <div class="card-image waves-effect waves-block waves-light">
-          <img class="activator" src="images/projects/Foodie.jpg">
+          <img class="activator project-img" src="images/projects/Data%20Science%20Concepts.jpg">
+        </div>
+        <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Data Science Concepts<i
+                            class="material-icons right">more_vert</i></span>
+        </div>
+        <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Data Science Concepts<i
+                            class="material-icons right">close</i></span>
+          <p class="black-text f6">
+
+            This repository contains a collection of Jupyter notebooks containing data science concepts and my notes on them.
+            <br><br>
+            It should be useful for both a quick review and a reference to fall back upon.
+            <br><br>
+            The notebooks contain both vital theory and practical example with real-life dataset.
+            <br><br>
+            It discusses things about Exploratory Data Analysis, Data Wrangling, and Pandas and SQL.
+
+          </p>
+          <p><a href="https://github.com/full-void/data-science-concepts" class="waves-effect waves-light btn btn-large white-text blue darken-2 mb1">
+            <img class="git-icon" src="images/icons/github.svg">Github</a></p>
+        </div>
+      </div>
+
+      <div class="card zero-opacity transition-mid black-text hoverable ma2 pa1">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img class="activator  project-img" src="images/projects/Foodie.jpg">
         </div>
         <div class="card-content">
                         <span class="card-title activator grey-text text-darken-4">Foodie<i
@@ -361,25 +388,23 @@
             share and review restaurants. </p>
 
           <p class="black-text f6"> Uses Node.js + Express for backend, Passport for
-            authentication/authorization, ejs templates for front end, MongoDB for database and winston for
-            logging. </p>
+            authentication/authorization, ejs templates for front end, MongoDB for database.</p>
 
-          <p class="black-text f6"> Features include user authentication, authorization, login, signup, token
-            based
-            password reset [disabled in demo], flash messages, admin signup, completely update profile
-            (including auto update username), geo-location with API, profile, and so on. </p>
+          <p class="black-text f6"> Features include user authentication, authorization, geo-location with API, profile, and lots of others. </p>
 
           <p class="black-text f6"> "Pinterest" style masonry layout. Minimalist design philosophy and
             material colors. <br/> <br/> Note: Uses Heroku free so loadtime could be slow</p>
           <p><a href="https://foodie-demo.herokuapp.com/"
                 class="waves-effect waves-light btn btn-large white-text blue darken-2 mb1"> <i
               class="material-icons left">ondemand_video</i> Demo</a>
+          <p><a href="https://github.com/full-void/foodie" class="waves-effect waves-light btn btn-large white-text blue darken-2 mb1">
+            <img class="git-icon" src="images/icons/github.svg">Github</a></p>
         </div>
       </div>
 
       <div class="card zero-opacity transition-mid black-text hoverable ma2 pa1">
         <div class="card-image waves-effect waves-block waves-light">
-          <img class="activator" src="images/projects/Face%20Detector.jpg">
+          <img class="activator project-img" src="images/projects/Face%20Detector.jpg">
         </div>
         <div class="card-content">
                         <span class="card-title activator grey-text text-darken-4">Face Detector and Scorer<i
@@ -399,13 +424,15 @@
             philosophy and material colors.<br/> <br/> Note: Uses Heroku free so loadtime could be slow</p>
           <p><a href="https://face-detector-front.herokuapp.com/"
                 class="waves-effect waves-light btn btn-large white-text blue darken-2 mb1"> <i
-              class="material-icons left">ondemand_video</i> Demo</a>
+              class="material-icons left">ondemand_video</i> Demo</a></p>
+          <p><a href="https://github.com/full-void/face-detector" class="waves-effect waves-light btn btn-large white-text blue darken-2 mb1">
+            <img class="git-icon" src="images/icons/github.svg">Github</a></p>
         </div>
       </div>
 
       <div class="card zero-opacity transition-mid black-text hoverable ma2 pa1">
         <div class="card-image waves-effect waves-block waves-light">
-          <img class="activator" src="images/projects/Public%20Playlist.png">
+          <img class="activator project-img" src="images/projects/Public%20Playlist.png">
         </div>
         <div class="card-content">
                         <span class="card-title activator grey-text text-darken-4">Public Playlist<i
@@ -421,7 +448,9 @@
             Front-end is made with React and Apollo</p>
           <p><a href="https://public-playlist-client.herokuapp.com/"
                 class="waves-effect waves-light btn btn-large white-text blue darken-2 mb1"> <i
-              class="material-icons left">ondemand_video</i> Demo</a>
+              class="material-icons left">ondemand_video</i> Demo</a></p>
+          <p><a href="https://github.com/full-void/public-playlist-client" class="waves-effect waves-light btn btn-large white-text blue darken-2 mb1">
+            <img class="git-icon" src="images/icons/github.svg">Github</a></p>
         </div>
       </div>
     </div>

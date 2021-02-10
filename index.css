@@ -68,7 +68,6 @@ canvas {
 }
 
 .ccenter {
-  display: grid;
   align-content: center;
   justify-content: center;
   align-items: center;
@@ -151,6 +150,45 @@ canvas {
   overflow: auto;
   min-width: 100%;
   min-height: 100%;
+}
+
+.git-icon {
+  width: 53px;
+  height: 28px;
+  vertical-align: middle;
+  top: -3px;
+  fill: white;
+  left: -5px;
+}
+
+.project-img {
+  width: 460px !important;
+  height: 258px;
+}
+
+.java-icon {
+  left: 11px !important;
+}
+
+/* Works on Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #ededed #bababa;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #bababa;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #ededed;
+  border-radius: 20px;
+  border: 3px solid #bababa;
 }
 
 /*# sourceMappingURL=index.css.map */
