@@ -1,10 +1,22 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/tachyons/4.11.1/tachyons.min.css");
-html, body {
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+html,
+body {
   width: 100%;
   height: 100%;
   color: white;
   margin: 0;
   padding: 0;
+}
+
+.font-header {
+  font-family: "Lobster", cursive;
+  letter-spacing: 0.3rem;
+}
+
+.h-exp {
+  min-height: 26rem;
+  max-height: 30rem;
 }
 
 .b {
@@ -21,7 +33,7 @@ main {
 }
 
 .bg-gradient-orange {
-  background: #970ed5;
+  background: #ed6e25;
   background: linear-gradient(90deg, #ed6e25 0%, #ff6f00 43%, #ffaf00 100%);
 }
 
@@ -32,12 +44,51 @@ main {
 
 .bg-gradient-green {
   background: #15e434;
-  background: linear-gradient(90deg, #15e434 0%, #00ff1d 44%, #00ff4c 100%);
+  background: linear-gradient(90deg, #16ee9c 0%, #0eec90 44%, #01f181 100%);
 }
 
 .bg-gradient-red {
   background: #ff1500;
   background: linear-gradient(90deg, #e43a15 0%, #ff004a 31%, #ff1500 100%);
+}
+
+.bg-gradient-yellow {
+  background: #fcb90c;
+  background: linear-gradient(90deg, #fcb90c 0%, #fed107 44%, #f1da01 100%);
+}
+
+.text-blue-nav {
+  color: #1596e4;
+}
+
+.text-orange-nav {
+  color: #ed6e25;
+}
+
+.text-purple-nav {
+  color: #8625ed;
+}
+
+.text-green-nav {
+  color: #15e434;
+}
+
+.text-red-nav {
+  color: #ff1500;
+}
+
+.text-yellow-nav {
+  color: #fcb90c;
+}
+
+.text-black-nav {
+  color: #1f2937;
+}
+
+.bg-intro {
+  background-image: url("./images/intro-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 canvas {
@@ -47,15 +98,14 @@ canvas {
 
 .profile-pic {
   width: 251px;
-  margin-right: 15px;
 }
 
 .bio {
   min-width: 251px;
 }
 
-.card {
-  padding: 15px;
+.card .card-title {
+  font-weight: 400;
 }
 .card .prog-icon {
   height: 6em;
@@ -152,9 +202,8 @@ canvas {
 }
 
 .git-icon {
-  width: 53px;
-  height: 28px;
   vertical-align: middle;
+  margin-right: 7px;
   top: -3px;
   fill: white;
   left: -5px;
@@ -162,7 +211,8 @@ canvas {
 
 .project-img {
   width: 460px !important;
-  height: 258px;
+  height: 328px;
+  object-fit: cover;
 }
 
 .java-icon {
@@ -188,6 +238,70 @@ canvas {
   background-color: #ededed;
   border-radius: 20px;
   border: 3px solid #bababa;
+}
+
+.fade-in {
+  animation: fadeIn linear 1s;
+  -webkit-animation: fadeIn linear 1s;
+  -moz-animation: fadeIn linear 1s;
+  -o-animation: fadeIn linear 1s;
+  -ms-animation: fadeIn linear 1s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+blockquote,
+dl,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+figure,
+p,
+pre {
+  margin: 0.7rem 0;
 }
 
 /*# sourceMappingURL=index.css.map */

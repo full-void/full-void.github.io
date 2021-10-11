@@ -1,19 +1,62 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/tachyons/4.11.1/tachyons.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 
 $small-screen-size: 729px;
 $mid-screen-size: 1135px;
-$background-gradient-blue: linear-gradient(90deg, rgba(21,150,228,1) 0%, rgba(0,172,255,1) 31%, rgba(0,125,255,1) 100%);
-$background-gradient-orange: linear-gradient(90deg, rgba(237,110,37,1) 0%, rgba(255,111,0,1) 43%, rgba(255,175,0,1) 100%);
-$background-gradient-purple: linear-gradient(90deg, rgba(134,37,237,1) 0%, rgba(151,14,213,1) 59%, rgba(184,0,255,1) 100%);
-$background-gradient-green: linear-gradient(90deg, rgba(21,228,52,1) 0%, rgba(0,255,29,1) 44%, rgba(0,255,76,1) 100%);
-$background-gradient-red: linear-gradient(90deg, rgba(228,58,21,1) 0%, rgba(255,0,74,1) 31%, rgba(255,21,0,1) 100%);
+$background-gradient-blue: linear-gradient(
+  90deg,
+  rgba(21, 150, 228, 1) 0%,
+  rgba(0, 172, 255, 1) 31%,
+  rgba(0, 125, 255, 1) 100%
+);
+$background-gradient-orange: linear-gradient(
+  90deg,
+  rgba(237, 110, 37, 1) 0%,
+  rgba(255, 111, 0, 1) 43%,
+  rgba(255, 175, 0, 1) 100%
+);
+$background-gradient-purple: linear-gradient(
+  90deg,
+  rgba(134, 37, 237, 1) 0%,
+  rgba(151, 14, 213, 1) 59%,
+  rgba(184, 0, 255, 1) 100%
+);
+$background-gradient-green: linear-gradient(
+  90deg,
+  rgba(22, 238, 156, 1) 0%,
+  rgba(14, 236, 144, 1) 44%,
+  rgba(1, 241, 129, 1) 100%
+);
+$background-gradient-red: linear-gradient(
+  90deg,
+  rgba(228, 58, 21, 1) 0%,
+  rgba(255, 0, 74, 1) 31%,
+  rgba(255, 21, 0, 1) 100%
+);
+$background-gradient-yellow: linear-gradient(
+  90deg,
+  rgba(252, 185, 12, 1) 0%,
+  rgba(254, 209, 7, 1) 44%,
+  rgba(241, 218, 1, 1) 100%
+);
 
-html, body {
+html,
+body {
   width: 100%;
   height: 100%;
   color: white;
   margin: 0;
   padding: 0;
+}
+
+.font-header {
+  font-family: "Lobster", cursive;
+  letter-spacing: 0.3rem;
+}
+
+.h-exp {
+  min-height: 26rem;
+  max-height: 30rem;
 }
 
 .b {
@@ -29,23 +72,62 @@ main {
 }
 
 .bg-gradient-orange {
-  background: rgba(151,14,213,1);
+  background: rgba(237, 110, 37, 1);
   background: $background-gradient-orange;
 }
 
 .bg-gradient-purple {
-  background: rgba(134,37,237,1);
+  background: rgba(134, 37, 237, 1);
   background: $background-gradient-purple;
 }
 
 .bg-gradient-green {
-  background: rgb(21,228,52);
+  background: rgb(21, 228, 52);
   background: $background-gradient-green;
 }
 
 .bg-gradient-red {
-  background: rgba(255,21,0,1);
+  background: rgba(255, 21, 0, 1);
   background: $background-gradient-red;
+}
+
+.bg-gradient-yellow {
+  background: rgb(252, 185, 12);
+  background: $background-gradient-yellow;
+}
+
+.text-blue-nav {
+  color: rgb(21, 150, 228);
+}
+
+.text-orange-nav {
+  color: rgba(237, 110, 37, 1);
+}
+
+.text-purple-nav {
+  color: rgba(134, 37, 237, 1);
+}
+
+.text-green-nav {
+  color: rgb(21, 228, 52);
+}
+
+.text-red-nav {
+  color: rgba(255, 21, 0, 1);
+}
+
+.text-yellow-nav {
+  color: rgb(252, 185, 12);
+}
+
+.text-black-nav {
+  color: rgba(31, 41, 55, 1);
+}
+
+.bg-intro {
+  background-image: url("./images/intro-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 canvas {
@@ -55,15 +137,17 @@ canvas {
 
 .profile-pic {
   width: 251px;
-  margin-right: 15px;
-
+  // margin-right: 15px;
 }
 
 .bio {
   min-width: 251px;
 }
 .card {
-  padding: 15px;
+  .card-title {
+    font-weight: 400;
+  }
+
   .prog-icon {
     height: 6em;
     width: 6em;
@@ -97,7 +181,6 @@ canvas {
 }
 
 .hobbies {
-
   .card {
     max-width: 417px;
     img {
@@ -112,7 +195,6 @@ canvas {
     min-width: 301px;
   }
 }
-
 
 .button-icon {
   max-width: 22.1px;
@@ -164,9 +246,8 @@ canvas {
 }
 
 .git-icon {
-  width: 53px;
-  height: 28px;
   vertical-align: middle;
+  margin-right: 7px;
   top: -3px;
   fill: white;
   left: -5px;
@@ -174,7 +255,8 @@ canvas {
 
 .project-img {
   width: 460px !important;
-  height: 258px;
+  height: 328px;
+  object-fit: cover;
 }
 
 .java-icon {
@@ -203,4 +285,73 @@ $scrollbar-clr: #bababa;
   background-color: $scrollbar-bg;
   border-radius: 20px;
   border: 3px solid $scrollbar-clr;
+}
+
+.fade-in {
+  animation: fadeIn linear 1s;
+  -webkit-animation: fadeIn linear 1s;
+  -moz-animation: fadeIn linear 1s;
+  -o-animation: fadeIn linear 1s;
+  -ms-animation: fadeIn linear 1s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+blockquote,
+dl,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+figure,
+p,
+pre {
+  margin: 0.7rem 0;
 }
