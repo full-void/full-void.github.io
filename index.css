@@ -57,6 +57,10 @@ main {
   background: linear-gradient(90deg, #fcb90c 0%, #fed107 44%, #f1da01 100%);
 }
 
+.text-intro-nav {
+  color: #104fd8;
+}
+
 .text-blue-nav {
   color: #1596e4;
 }
