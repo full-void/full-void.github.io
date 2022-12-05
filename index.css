@@ -79,7 +79,9 @@ canvas {
   vertical-align: bottom; }
 
 .profile-pic {
-  width: 251px; }
+  width: 251px;
+  height: 251px;
+  object-fit: cover; }
 
 .bio {
   min-width: 251px; }
