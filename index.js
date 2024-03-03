@@ -67,3 +67,22 @@ function navColoring() {
         }
     });
 };
+
+document.addEventListener("DOMContentLoaded", function () {
+    new TypeIt("#intro-type", {
+        speed: 50
+    })
+    .pause(1000)
+    .type("I'm <span style='color:#bfbfbf'>Abhi[nav]</span>")
+    .options({speed: 500})
+    .pause(100)
+    .type("<br/>")
+    .pause(100)
+    .type("<br/>")
+    .pause(100)
+    .options({speed: 50})
+    .type("A mindful software engineer with a multi-faceted outlook on problems.")
+    .go();
+  });
+
+  

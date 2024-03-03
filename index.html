@@ -9,9 +9,11 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" href="./tailwind.css">
+  <script src="https://unpkg.com/typeit@8.8.3/dist/index.umd.js"></script>
   <link rel="stylesheet" href="index.css" />
-  <link rel="icon" href="images/favicon.jfif">
+
+  <link rel="stylesheet" href="./tailwind.css">
+  <link rel="icon" href="images/logo.jpg">
 </head>
 
 <body>
@@ -31,41 +33,13 @@
 
     <section id="intro" class="min-h-screen pb-20 py-32 bg-intro">
       <div class="w-4/5 center">
-        <h1 class="b mb-5 mt-0 opacity-100 sm:text-5xl text-3xl fade-in font-header">Mindful. Amazing. Simple.</h1>
-        <div>
-
-          <div class="flex flex-wrap ccenter w-full bio">
-            <p class="f3 my-4 opacity-100 fade-in"><span class="b">Hi.</span> It's lovely to meet you!</p>
-            <div class="opacity-100 fade-in mb-3">
-              <div class="f4">I'm Abhinav, your friendly, mindfully aware geek.</div>
-
-              <div class="flex md:ml-5 flex-wrap ccenter">
-                <img src="images/profile.jpeg" alt="profile-pic"
-                  class="profile-pic my-6 z-depth-3 block zero-opacity opacity-100 fade-in circle">
-              </div>
-
-              <div class="flex flex-wrap ccenter">
-
-                <p class="lg:w-2/3 md:w-3/4 sm:w-4/5">
-                  I'm an experienced, highly-motivated and fast-learning software developer aiming to make
-                  people's lives better.
-                  I'm proficient across the full-stack for web development. I have some experience in Cloud, CI/CD, and
-                  testing. I've also dabbled in mobile app development and automation.
-                  <br><br>
-                  When I am not working, you will find me meditating. I also love to
-                  hangout with people I care about and meet new ones!
-                  <br><br>
-                  I'm looking to work in a place with caring and driven culture. A great team working towards a positive
-                  impact would be a great fit with me.
-                  <!-- <br><br>
-                  By the way, if you're wondering what those huge words mean, they form my mantra: something that powers
-                  and forms the essence of my work philosophy. -->
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
+        <h1 class="b mb-5 mt-0 opacity-100 sm:text-8xl text-5xl fade-in font-header">Welcome,</h1>
+        <br><br>
+        <span id="intro-type" class="b md:w-2/3 sm:3/5 mb-5 mt-0 opacity-100 sm:text-5xl text-3xl fade-in"></span>
+        
       </div>
+
+
     </section>
 
     <section id="experiences" class="min-h-screen py-24 bg-gradient-purple">
@@ -86,18 +60,19 @@
             </div>
 
             <div class="inline">
-              <p>Designed the architecture and structure of app for better maintainability and scalability as per
+              <p>- Designed the architecture and structure of app for better maintainability and scalability as per
                 requirements.</p>
-              <p>Created features such as big tech integrations, nested folder-file structure in both frontend and
+              <p>- Created features such as big tech integrations, nested folder-file structure in both frontend and
                 backend.</p>
-              <p>Made and deployed multi-container docker apps on google cloud for production environments.</p>
-              <p>Refactored major components to remove current and reduce future bugs due to changed user stories.</p>
-              <p>Added jest and cypress testing functionality to apps and modified Github CI/CD pipeline to auto-run
+              <p>- Made and deployed multi-container docker apps on google cloud for production environments.</p>
+              <p>- Refactored major components to remove current and reduce future bugs due to changed user stories.</p>
+              <p>- Added jest and cypress testing functionality to apps and modified Github CI/CD pipeline to auto-run
                 tests.</p>
-              <p>Optimized MongoDB queries and wrote performant aggregations to analyze data quickly and succinctly.</p>
-              <p>Wrote swift, accurate data migrations and data loading scripts for both SQL and NoSQL databases.</p>
-              <p>Wrote unit, integrations and end-to-end tests for a reliable application.</p>
-              <p>Swiftly found and fixed critical production bugs.</p>
+              <p>- Optimized MongoDB queries and wrote performant aggregations to analyze data quickly and succinctly.
+              </p>
+              <p>- Wrote swift, accurate data migrations and data loading scripts for both SQL and NoSQL databases.</p>
+              <p>- Wrote unit, integrations and end-to-end tests for a reliable application.</p>
+              <p>- Swiftly found and fixed critical production bugs.</p>
             </div>
           </div>
         </div>
@@ -116,20 +91,20 @@
             </div>
 
             <div class="inline">
-              <p> Spearheaded critical features for applications. </p>
+              <p>- Spearheaded critical features for applications. </p>
 
-              <p> Designed, developed, and tested an app to empower investors with data analytics of their investments.
+              <p>- Designed, developed, and tested an app to empower investors with data analytics of their investments.
                 It was a full stack app that used React + Redux for front-end and Nest.js + Express on Node.js for
                 backend
                 and PostgreSQL for database. </p>
 
-              <p> Fixed major bugs and performed quality assurance of web apps to provide a smoother and richer user
+              <p>- Fixed major bugs and performed quality assurance of web apps to provide a smoother and richer user
                 experience. </p>
 
-              <p> Tweaked and deployed a flask data science api by deploying a docker container via Google Compute
+              <p>- Tweaked and deployed a flask data science api by deploying a docker container via Google Compute
                 Engine on Google Cloud. </p>
 
-              <p> Refactored, revamped, and developed features for an app which uses machine learning for market
+              <p>- Refactored, revamped, and developed features for an app which uses machine learning for market
                 analysis.
               </p>
             </div>
@@ -148,10 +123,10 @@
             </div>
 
             <div class="inline">
-              <p> Created new plugins from scratch work without any prior experience. The plugins were created for Revit
+              <p>- Created new plugins from scratch work without any prior experience. The plugins were created for Revit
                 in C# and drastically saved time for designers by automating repetitive tasks. </p>
-              <p> Tested and improved multiple C# plugins to increase productivity for various company means. </p>
-              <p> Fixed bugs in C# Revit plugins and regularly issued software patches to continuously improve products.
+              <p>- Tested and improved multiple C# plugins to increase productivity for various company means. </p>
+              <p>- Fixed bugs in C# Revit plugins and regularly issued software patches to continuously improve products.
               </p>
             </div>
           </div>
@@ -170,14 +145,14 @@
             </div>
 
             <div class="inline">
-              <p> Refactored codebase and added front end functionality to improve product user interface and
+              <p>- Refactored codebase and added front end functionality to improve product user interface and
                 experience.
               </p>
-              <p> Learned Adobe XD and Photoshop and reflected the experience through website design and content
+              <p>- Learned Adobe XD and Photoshop and reflected the experience through website design and content
                 development. </p>
-              <p> Redesigned main website and provided design wireframes, prototypes, and complete design with palette.
+              <p>- Redesigned main website and provided design wireframes, prototypes, and complete design with palette.
               </p>
-              <p> Designed and developed the main website for the company's new venture.</p>
+              <p>- Designed and developed the main website for the company's new venture.</p>
             </div>
           </div>
         </div>
@@ -196,15 +171,14 @@
             </div>
 
             <div class="inline">
-
-              <p> Collaborated with a diverse team of designers and engineers to design and prototype a novel idea. We
+              <p>- Collaborated with a diverse team of designers and engineers to design and prototype a novel idea. We
                 planned, designed and developed a fully functioning prototype of a pet-door with advanced features. It
                 would open/close automatically, sent a notification to the user, and able to view status via
                 camera. </p>
-              <p> Developed a RESTful Web API and MQTT for a cloud-based project and performed end-to-end testing. The
+              <p>- Developed a RESTful Web API and MQTT for a cloud-based project and performed end-to-end testing. The
                 project was a web and bluetooth connected keypad. The users can use application to store and customize
                 various devices and passcodes. </p>
-              <p> Created functional Android applications with a Node.js backend and Postgres webser deployed on Amazon
+              <p>- Created functional Android applications with a Node.js backend and Postgres webser deployed on Amazon
                 Web Services (AWS) for the above applications. </p>
 
             </div>
@@ -225,10 +199,10 @@
             <div class="skill-content p-4">
               <h2 class="text-lg mb-5 mt-0 b">Front-end</h2>
               <div class="skills-list flex flex-wrap items-center justify-center gap-4 gap-x-8">
+                <p class="m-0">TypeScript</p>
                 <p class="m-0">React</p>
                 <p class="m-0">Redux</p>
                 <p class="m-0">Sass</p>
-                <p class="m-0">TypeScript</p>
                 <p class="m-0">HTML</p>
                 <p class="m-0">CSS</p>
                 <p class="m-0">Javascript</p>
@@ -241,12 +215,13 @@
             <div class="skill-content p-4">
               <h2 class="text-lg mb-5 mt-0 b">Back-end</h2>
               <div class="skills-list flex flex-wrap items-center justify-center gap-4 gap-x-8">
+                <p class="m-0">MongoDB</p>
+                <p class="m-0">PostgreSQL</p>
                 <p class="m-0">Node.js</p>
+                <p class="m-0">Nest.js</p>
                 <p class="m-0">GraphQL</p>
                 <p class="m-0">Express</p>
                 <p class="m-0">Flask</p>
-                <p class="m-0">MongoDB</p>
-                <p class="m-0">PostgreSQL</p>
               </div>
             </div>
           </div>
@@ -256,10 +231,10 @@
             <div class="skill-content p-4">
               <h2 class="text-lg mb-5 mt-0 b">Dev Ops and Tools</h2>
               <div class="skills-list flex flex-wrap items-center justify-center gap-4 gap-x-8">
-                <p class="m-0">Cloud (GCP)</p>
-                <p class="m-0">Docker</p>
-                <p class="m-0">Jest</p>
                 <p class="m-0">Git</p>
+                <p class="m-0">Docker</p>
+                <p class="m-0">Cloud (GCP)</p>
+                <p class="m-0">Jest</p>
                 <p class="m-0">Linux</p>
                 <p class="m-0">AWS</p>
                 <p class="m-0">VS Code</p>

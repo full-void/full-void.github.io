@@ -49,6 +49,15 @@ body {
   padding: 0;
 }
 
+.ti-cursor {
+  font-size: unset !important;
+  transform: unset !important;
+}
+
+.justify-text {
+  text-align: justify;
+}
+
 .font-header {
   font-family: "Lobster", cursive;
   letter-spacing: 0.3rem;
@@ -140,8 +149,8 @@ canvas {
 }
 
 .profile-pic {
-  width: 251px;
-  height: 251px;
+  width: 300px;
+  height: 300px;
   object-fit: cover;
   // margin-right: 15px;
 }
@@ -170,6 +179,7 @@ canvas {
   align-items: center;
   justify-items: center;
 }
+
 .right-divider {
   border-right: 1px solid #fff;
 }
