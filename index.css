@@ -1,5 +1,5 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/tachyons/4.11.1/tachyons.min.css");
-@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 html,
 body {
   width: 100%;
@@ -7,6 +7,7 @@ body {
   color: white;
   margin: 0;
   padding: 0;
+  font-family: "Poppins", sans-serif;
 }
 
 .ti-cursor {
@@ -19,16 +20,13 @@ body {
 }
 
 .font-header {
-  font-family: "Lobster", cursive;
-  letter-spacing: 0.3rem;
+  font-family: "Orbitron", sans-serif;
+  letter-spacing: 0.1rem;
+  font-weight: bolder;
 }
 
 .h-exp {
   min-height: 26rem;
-}
-
-.b {
-  font-weight: bold;
 }
 
 main {
